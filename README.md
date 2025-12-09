@@ -47,7 +47,7 @@ A dynamic **ASP.NET Core MVC** web application for managing announcements, event
 ### **Steps**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/campus-notice-board.git
+   git clone https://github.com/your-username/campus-notice-board.git](https://github.com/MissPilusa/CampusNoticeBoard.git)
 
 2. Open the project in Visual Studio.
 
