@@ -56,3 +56,7 @@ A dynamic **ASP.NET Core MVC** web application for managing announcements, event
 4. Run the application (F5 or click the Run button).
 
 5. Navigate to https://localhost:5001 (or the port Visual Studio assigns).
+
+### Author
+Makoma I. Pilusa
+
