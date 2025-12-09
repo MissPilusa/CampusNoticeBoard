@@ -1,0 +1,36 @@
+﻿@model List<Announcement.Models.Event> 
+<!-- List of events as model -->
+
+<h2>Urgent Events (Priority Queue: Most Urgent First)</h2>
+
+<!-- Link to add a new event -->
+<a href="/Board/AddEvents" class="btn btn-primary">Add Event</a>
+
+<!-- Link to remove the most urgent event (priority queue logic) -->
+<a href="/Board/RemoveEvents" class="btn btn-danger">Remove Top Event</a>
+
+<!-- Table of events, sorted by priority -->
+<table class="gradient-table mt-3">
+    <thead>
+        <tr>
+            <th>Title</th>       <!-- Title of the event -->
+            <th>Details</th>     <!-- More info about event -->
+            <th>Priority</th>    <!-- Urgency: 1=most urgent -->
+            <th>Date</th>        <!-- When posted -->
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var ev in Model) // For each event in the list
+    {
+        <tr>
+            <td>@ev.Title</td>        <!-- Display title -->
+            <td>@ev.Details</td>      <!-- Display details -->
+            <td>@ev.Priority</td>     <!-- Display priority (lower is higher) -->
+            <td>@ev.Date.ToString("g")</td> <!-- Display date/time -->
+        </tr>
+    }
+    </tbody>
+</table>
+
+<!-- Link back to dashboard -->
+<a href="/Home/Index" class="btn btn-secondary">Back to Home</a>

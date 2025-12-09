@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Campus Notice Board";
+}
+
+<div class="text-center mb-5">
+    <div class="col-md-12 text-center">
+        <h1 class="display-5 fw-bold" style="color:cadetblue;"> Welcome to the Campus Notice Board </h1> 
+        <p class="lead">
+            This site allows students and staff to stay updated with the latest announcements, notices, and events on campus.
+            You can post new announcements, add public notices, and create events for the campus community.
+            All updates are displayed in real-time and organized by urgency and recency.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+
+    <!-- Add Announcement -->
+    <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Add Announcement</h5>
+                <p class="card-text">
+                    Post important updates or messages for the campus community.
+                </p>
+                <a asp-controller="Board" asp-action="AddAnnouncement" class="btn btn-primary w-100">
+                    Go to Add Announcement
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Notice -->
+    <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Add Notice</h5>
+                <p class="card-text">
+                    Submit general notices for all students and staff to see.
+                </p>
+                <a asp-controller="Board" asp-action="AddNotice" class="btn btn-warning w-100">
+                    Go to Add Notice
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Event -->
+    <div class="col-md-4">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Add Event</h5>
+                <p class="card-text">
+                    Create and publish upcoming campus events and activities.
+                </p>
+                <a asp-controller="Board" asp-action="AddEvents" class="btn btn-success w-100">
+                    Go to Add Event
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Carousel -->
+    <div class="carousel-wrapper">
+    <div id="carouselExample" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <img src="~/images/pic1.jpg" class="d-block w-50" alt="Campus">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img src="~/images/pic2.jpg" class="d-block w-50" alt="Auditorium">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img src="~/images/pic3.jpg" class="d-block w-50" alt="Students on Campus">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <img src="~/images/pic4.jpg" class="d-block w-50" alt="Students on Campus">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

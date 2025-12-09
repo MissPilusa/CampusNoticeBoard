@@ -1,0 +1,26 @@
+﻿@model Announcement.Models.Notice 
+<!-- Form expects a Notice object -->
+
+<h2>Add Notice</h2>
+
+<form asp-controller="Board" asp-action="AddNotice" method="post">
+    <div class="mb-3">
+        <label>Notice:</label>
+        <!-- Input for notice message -->
+        <input asp-for="Message" required class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Your Name:</label>
+        <!-- Input for author name -->
+        <input asp-for="Author" required class="form-control" />
+    </div>
+
+    <!--Posting-->
+    <button type="submit" class="btn btn-success">Post</button>
+
+    <!-- Link to cancel/go back to list -->
+    <a asp-controller="Board" asp-action="Notices" class="btn btn-secondary">Cancel</a>
+</form>
+
+
